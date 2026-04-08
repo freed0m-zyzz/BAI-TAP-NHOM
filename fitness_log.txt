@@ -1,0 +1,7 @@
+SESSION|Gym|2026-04-08 14:17:03
+EX|Bench Press|Compound|Intermediate|4|8|60.00
+EX|Push Up|Compound|Beginner|3|15|0.00
+END
+SESSION|Gym|2026-04-08 14:28:41
+EX|Bench Press|Compound|Intermediate|4|8|60.00
+END
