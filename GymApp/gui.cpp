@@ -1,7 +1,7 @@
 #include <windows.h>
 #include <string>
 
-#include "data.h"
+#include "data.cpp"
 
 // --- Dinh nghia ID cho cac Control ---
 #define ID_TXT_USERNAME 101
