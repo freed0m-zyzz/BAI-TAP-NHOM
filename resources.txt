@@ -1,0 +1,4 @@
+
+
+do minh quan|Gym|bench press|N/A|Normal|3|10|100.000000|3000.000000
+nhu thanh dat|Gym|bench press|N/A|Normal|3|10|200.000000|6000.000000

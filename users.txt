@@ -1,0 +1,6 @@
+
+do minh quan|182|80
+nhu thanh dat|180|100
+nhu thanh dat|170|50|20|Nam
+nhu thanh dat|170|50|20|Nam
+nhu thanh dat|170|50|18|Nam
