@@ -33,7 +33,7 @@ public:
         return "Beo phi (Obese)";
     }
 
-    // TÍNH NĂNG MỚI: Phác đồ dinh dưỡng
+    //  Phác đồ dinh dưỡng
     string getNutritionAdvice() const {
         double bmi = getBMI();
         if (bmi < 18.5) return ">> Trang thai: Thieu can\n>> Loi khuyen: Tang Calo (+500 kcal/ngay). An nhieu tinh bot, protein.\n>> Tap luyen: Tap trung cac bai Compound nang (Squat, Bench Press), it hiep, it lan.";
@@ -134,7 +134,7 @@ public:
         return history;
     }
 
-    // TÍNH NĂNG MỚI: Xuất dữ liệu ra Excel (File .csv)
+    //  Xuất dữ liệu ra Excel (File .csv)
     bool exportToCSV(const string& username) {
         vector<Workout> history = loadHistory(username);
         if (history.empty()) return false; // Không có lịch sử để xuất
@@ -143,10 +143,10 @@ public:
         ofstream file(filename); // Chế độ ghi đè tạo file mới
         if (!file.is_open()) return false;
 
-        // Ghi dòng tiêu đề cột cho Excel hiểu
+        
         file << "Username,Loai,Ten Bai Tap,Nhom Co,Do Kho,So Hiep,So Lan,Khoi Luong(kg),Tong Volume" << endl;
         
-        // Ghi dữ liệu, thay dấu | bằng dấu ,
+        
         for (const auto& w : history) {
             file << w.username << "," << w.type << "," << w.name << "," 
                  << w.category << "," << w.difficulty << "," << w.sets << "," 
