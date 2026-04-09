@@ -9,7 +9,7 @@
 #define ID_TXT_WEIGHT 103
 #define ID_BTN_LOAD_USER 104
 #define ID_BTN_SAVE_USER 105
-#define ID_BTN_NUTRITION 106 // Nut moi
+#define ID_BTN_NUTRITION 106 
 
 #define ID_TXT_EX_NAME 201
 #define ID_TXT_SETS 202
@@ -18,7 +18,7 @@
 #define ID_BTN_SAVE_WORKOUT 205
 #define ID_BTN_VIEW_HISTORY 206
 #define ID_BTN_SUGGEST_HOME 207
-#define ID_BTN_EXPORT_CSV 208 // Nut moi
+#define ID_BTN_EXPORT_CSV 208 
 
 DataManager db;
 HWND hUsername, hHeight, hWeight, hBmiResult;
@@ -95,7 +95,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
                     break;
                 }
                 
-                // TÍNH NĂNG MỚI 1: Nút Tư vấn Dinh Dưỡng
+                Nút Tư vấn Dinh Dưỡng
                 case ID_BTN_NUTRITION: {
                     char nameBuf[100]; GetWindowTextA(hUsername, nameBuf, 100);
                     User u;
@@ -108,7 +108,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
                     break;
                 }
 
-                // ... (Phần Lưu Bài Tập & Gợi ý giữ nguyên)
+                //(Phần Lưu Bài Tập & Gợi ý giữ nguyên)
                 case ID_BTN_SAVE_WORKOUT: {
                     char userBuf[100], exName[100], setBuf[50], repBuf[50], wBuf[50];
                     GetWindowTextA(hUsername, userBuf, 100);
@@ -123,7 +123,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
                     break;
                 }
                 
-                // TÍNH NĂNG MỚI 2: Tích hợp Thống Kê vào Lịch Sử
+                //  Tích hợp Thống Kê vào Lịch Sử
                 case ID_BTN_VIEW_HISTORY: {
                     char userBuf[100]; GetWindowTextA(hUsername, userBuf, 100);
                     if(strlen(userBuf) == 0) { MessageBoxA(hwnd, "Vui long nhap Username!", "Thong bao", MB_ICONWARNING); break; }
@@ -161,7 +161,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
                     break;
                 }
 
-                // TÍNH NĂNG MỚI 3: Nút Xuất File Excel
+                // Nút Xuất File Excel
                 case ID_BTN_EXPORT_CSV: {
                     char userBuf[100]; GetWindowTextA(hUsername, userBuf, 100);
                     if(strlen(userBuf) == 0) { MessageBoxA(hwnd, "Vui long nhap Username de xuat du lieu!", "Thong bao", MB_ICONWARNING); break; }
